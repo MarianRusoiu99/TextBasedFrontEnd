@@ -11,6 +11,10 @@ export default defineConfig({
         v3_throwAbortReason: true,
       },
     }),
+    
     tsconfigPaths(),
   ],
+   optimizeDeps: {
+    include: ['react-vis-network-graph'],
+  },
 });
